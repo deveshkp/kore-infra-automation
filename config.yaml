@@ -1,0 +1,48 @@
+---
+
+artifactory:
+
+    url: https://rpo.myorg.com/artifactory/rpo-generic-release-local/org/iva/bots/
+
+    api_key: xxxxxx
+
+    user_name: non-humanid
+
+    content_type: application/java-archive
+
+file_path:
+
+    /app/deploy/artifacts/
+
+roles:
+
+    Bot Developer:
+
+        app-xyz-{}-admins
+
+    Bot Tester:
+
+        app-xyz-{}-testers
+
+    Bot Analyst:
+
+        app-xyz-{}-analysts
+
+hosts:
+
+    uat:
+
+        https://myapp.xyz-uat.pncint.net
+
+    rnd:
+
+        https://myapp.xyz-rnd.pncint.net
+
+    qa:
+
+        https://myapp.xyz-qa.pncint.net
+
+    prod:
+
+        https://myapp.xyz-prod.pncint.net
+
